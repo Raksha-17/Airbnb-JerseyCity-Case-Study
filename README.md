@@ -51,15 +51,16 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 Note that some columns have same number of missing values. This may be due to missing information in the same row.
    
 3. The following table shows number of __duplicate ids__ in the table.
+4. 
 ![Screenshot 2023-10-27 9 32 02 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/338af744-63b2-4321-b99a-d57f059c70e9)
   
-4. There are 4 unique room types (__room_type__) in our data.
+5. There are 4 unique room types (__room_type__) in our data.
 ![Screenshot 2023-10-27 9 32 24 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/d5f50a71-bc19-42be-8b7e-eb6e42700f67)
 
-5. There are 6 unique neighbourhood group types (__neighbourhood_group__) in our data.
+6. There are 6 unique neighbourhood group types (__neighbourhood_group__) in our data.
 ![Screenshot 2023-10-27 9 32 43 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/677c5597-fca1-47d4-880a-468bad2207f8)
 
-6. MAX and MIN price of the room types
+7. MAX and MIN price of the room types
 ![Screenshot 2023-10-27 9 33 03 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/7a2656e4-475a-416c-9988-138f39b8b3df)
 
 ## Analyze and Share
@@ -139,13 +140,14 @@ We can see that in some neighbourhoods superhosts aren't even charging as much a
  this does not match Airbnb's claim that enabling instant book increases a host's earnings
 
 * let's look at price and availability_30 separately.
-![Screenshot 2023-10-27 11 05 17 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/705fe582-3dcb-4e64-b338-130afb56b0b9)
+![Screenshot 2023-10-27 12 36 39 PM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/d8639c33-6251-40f4-bbd6-a7e6a80033d8)
+
 average price is even higher without instant book, according to Airbnb hosts get double the reservations because of the convenience factor.
 
 - is it true that with instant book enabled, hosts get more reservations?
 - again we will use the availibility for the next 30 days to measure it
-  ![Screenshot 2023-10-27 11 05 33 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/8d2881cf-14fe-41e8-a0a4-dbf97bfeb14a)
+![Screenshot 2023-10-27 12 37 04 PM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/c7da7fee-7bf9-42b0-93ca-ba487376506c)
+
 hosts with instant book enabled seems to be more available, which means they get less reservations.
 - again, I see the missing opportunity - hosts are not charging premium for the convenience that comes with instant book
 - Airbnb should work on making their hosts better informed in terms of pricing, also incentivize hosts by optimizing search results etc
-![Screenshot 2023-10-27 11 05 43 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/936c4edd-9f8a-4eb2-bbe9-fcc323310ea6)
