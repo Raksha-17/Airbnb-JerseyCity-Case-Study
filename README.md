@@ -122,7 +122,8 @@ Ward E and Ward F are top 2 by number of superhosts.
 In Ward E, regular hosts charge more than superhosts on average, something is not adding up
 - Again, superhosts charge more but I suspect that the rankings of neighbourhoods has been affected by room type
 - Pulling the same query, but price per bed this time
-![Screenshot 2023-10-27 11 04 28 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/dcab7b6e-e4ac-4417-b13d-acfcff07f3bd)
+![Screenshot 2023-10-27 12 31 29 PM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/831d5062-0f0a-4390-aeb2-6f6fa9ee7d73)
+
 We can see that in some neighbourhoods superhosts aren't even charging as much as the regular ones (especially in the Ward E where properties are in demand and superhosts have high revenue potential
 - Maybe Airbnb should notify the hosts about it to help them price their properties right for more revenue
 - There's also the possibility that the regular hosts aren't attracting as many guests as they could because they are pricing their properties too expensive
@@ -133,7 +134,8 @@ We can see that in some neighbourhoods superhosts aren't even charging as much a
 20 records with col host_is_superhost blank, does affect our analysis so update it to regular host.
 
 * relationship between instant book and revenue potential
-![Screenshot 2023-10-27 11 04 59 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/f3d7d492-d9d8-467d-ad0d-08b122954942)
+![Screenshot 2023-10-27 12 26 44 PM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/0ebd0f96-bc6f-4f68-8f96-f4201ca66540)
+
  this does not match Airbnb's claim that enabling instant book increases a host's earnings
 
 * let's look at price and availability_30 separately.
