@@ -43,21 +43,23 @@ A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inabi
 SQL Query: [1.Data Exploration](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/1.%20Data%20Exploration.sql) 
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.
 
-1. The table below shows the all column names and their data types. The __ride_id__ column is our primary key.  
-   ![image](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/Images/bq-results-20231001-021815-1696126749408.png%20(1).csv)  
-2. The following table shows number of __null values__ in each column.  
+1. The table below shows the all column names and their data types. The __id__ column is our primary key.
+![Screenshot 2023-10-27 9 30 29 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/b97ba0d0-aa6c-4c35-adc0-0afa408e2f69)
+
+2.The following table shows number of __null values__ in each column.  
+![Screenshot 2023-10-27 9 31 31 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/4b881151-6569-4417-a892-85723745152f)
+Note that some columns have same number of missing values. This may be due to missing information in the same row.
    
-   ![image](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/Images/bq-results-20231004-200249-1696451196561.csv)
-   Note that some columns have same number of missing values. This may be due to missing information in the same row i.e. station's name and id for the same station and latitude and longitude for the same ending station.  
-   
-3. All __ride_id__ values have length of 16 so no need to clean it.
- ![image](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/Images/script_job_adacc5d6cf1c9f9d73e47578d52b5372_3.csv)
-4. There are 3 unique types of bikes(__rideable_type__) in our data.
-   ![image](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/Images/script_job_1c55a1ff093215e21e2cbed92ba57174_4.csv)
-5. The __started_at__ and __ended_at__ shows start and end time of the trip in YYYY-MM-DD hh:mm:ss UTC format. New column ride_length can be created to find the total trip duration. There are 2856 trips which has duration longer than a day and 63011 trips having less than a minute duration or having end time earlier than start time so need to remove them. Other columns day_of_week and month can also be helpful in analysis of trips at different times in a year.
-6. Total of 164932 rows have both __start_station_name__ and __start_station_id__ missing which needs to be removed.  
-7. Total of 179615 rows have both __end_station_name__ and __end_station_id__ missing which needs to be removed.
-8. Total of 4255 rows have both __end_lat__ and __end_lng__ missing which needs to be removed.
-9. __member_casual__ column has 2 uniqued values as member or casual rider.
-    ![image](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/Images/script_job_b9536d303533484358deba7997f1d3f8_13.csv)
-10. Columns that need to be removed are start_station_id and end_station_id as they do not add value to analysis of our current problem. Longitude and latitude location columns may not be used in analysis but can be used to visualise a map.
+3. The following table shows number of __duplicate ids__ in the table.
+![Screenshot 2023-10-27 9 32 02 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/338af744-63b2-4321-b99a-d57f059c70e9)
+  
+4. There are 4 unique room types (__room_type__) in our data.
+![Screenshot 2023-10-27 9 32 24 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/d5f50a71-bc19-42be-8b7e-eb6e42700f67)
+
+5. There are 6 unique neighbourhood group types (__neighbourhood_group__) in our data.
+![Screenshot 2023-10-27 9 32 43 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/677c5597-fca1-47d4-880a-468bad2207f8)
+
+6. MAX and MIN price of the room types
+![Screenshot 2023-10-27 9 33 03 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/7a2656e4-475a-416c-9988-138f39b8b3df)
+
+
