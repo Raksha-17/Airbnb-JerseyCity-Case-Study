@@ -208,4 +208,28 @@ Data Visualization: [Tableau](https://public.tableau.com/app/profile/raksha.kand
 
 * hosts with instant book enabled seems to be more available, which means they get less reservations. Hosts are not charging premium for the convenience that comes with instant book.
 
-  ## Act
+![Dashboard 1](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/6934ee78-2cde-4cb8-a0ae-9deb775d5458)
+
+ ## Act
+
+*  Airbnb should notify the super hosts about the price in Ward E to help them price their properties right for more revenue.
+
+*  Airbnb should notify hosts with instant book charging premium for the convenience for more reservations and more revenue.
+
+Recommendations:
+
+The top revenue contributors to Airbnb in Jersey City are entire homes from Ward E, Ward F, Ward C, Ward D by far, to maximize revenue, it is essential that Airbnb makes the most out of the potential of these listings. Potential areas to be optimized and explored are:
+
+- The prices of entire homes in top four neighbourhoods should reflect the large demand;
+
+- Help superhosts price their properties in a way that reflects their status;
+
+-  Help instantbookable listings price properly taking into consideration the convenience they are providing;
+
+- Help highly rated listings price properly to reflect their high ratings and superior quality of services.
+
+Limitations and assumptions:
+
+- This analysis assumes that hosts that have not been reviewed since November 2022 are inactive;
+
+- Revenue potential is only measured by the potential revenue coming in the next 30 days, with the assumption that most visitors book their stays less than 30 days in advance.
