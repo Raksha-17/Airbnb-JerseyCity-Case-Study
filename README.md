@@ -2,7 +2,7 @@
 Airbnb JerseyCity case study! Optimize the revenue by its active listings. 
 
 ## Introduction
-In this case study, I will estimate the revenue potential of Airbnb in jersey city and check if I can increase its revenue potential. In order to answer the key business questions, I will follow the steps of the data analysis process: __[Ask](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#analyze-and-share), [Share](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#analyze-and-share), and [Act](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#act)__.
+In this case study, I will estimate the revenue potential of Airbnb in jersey city and check if I can increase its revenue potential. In order to answer the key business questions, I will follow the steps of the data analysis process: __[Ask](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#analyze), [Share](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#share), and [Act](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#act)__.
 
 ### Quick links:
 Data Source: [Inside Airbnb](http://insideairbnb.com/get-the-data) [accessed on 10/05/23]  
@@ -69,14 +69,16 @@ Note that some columns have same number of missing values. This may be due to mi
 
 ![Screenshot 2023-10-27 9 33 03 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/7a2656e4-475a-416c-9988-138f39b8b3df)
 
-## Analyze and Share
+## Analyze
 SQL Query: [Data Analysis](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/2.%20Data%20Analysis.sql)  
-Data Visualization: [Tableau](https://public.tableau.com/app/profile/raksha.kandasamy.chandramohan/viz/JerseyCityAirbnb_16972383746030/Dashboard1#1)  
-The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.  
+The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau. 
 
 The analysis question is: 
+
 1.) How/where are tourists/Airbnb guests spending their money in JerseyCity?
+
 2.) What makes a successful host in JerseyCity?
+
 3.) Strategy suggestions for Airbnb in JerseyCity? 
 
 * There are 579 unique Airbnb hosts in Jersey City.
@@ -181,3 +183,8 @@ average price is even higher without instant book, according to Airbnb hosts get
 hosts with instant book enabled seems to be more available, which means they get less reservations.
 - again, I see the missing opportunity - hosts are not charging premium for the convenience that comes with instant book
 - Airbnb should work on making their hosts better informed in terms of pricing, also incentivize hosts by optimizing search results etc
+
+## share
+
+Data Visualization: [Tableau](https://public.tableau.com/app/profile/raksha.kandasamy.chandramohan/viz/JerseyCityAirbnb_16972383746030/Dashboard1#1)  
+
