@@ -184,7 +184,28 @@ hosts with instant book enabled seems to be more available, which means they get
 - again, I see the missing opportunity - hosts are not charging premium for the convenience that comes with instant book
 - Airbnb should work on making their hosts better informed in terms of pricing, also incentivize hosts by optimizing search results etc
 
-## share
+## Share
 
 Data Visualization: [Tableau](https://public.tableau.com/app/profile/raksha.kandasamy.chandramohan/viz/JerseyCityAirbnb_16972383746030/Dashboard1#1)  
 
+* About (72%) of Airbnb hosts only have one listing, other hosts could have multiple listings (up to as many as 400)
+
+* Some of the more rural/remote neighbourhoods have higher average prices, my guess is that the properties tend to be larger for these areas (room type/beds)
+
+* guests pay more $ for places downtown on average.
+
+* The top two are entire homes in Ward E and Ward F by far
+ - Also, it looks like no one really wants shared room, regardless of location
+ - Entire homes as a room type is the most in demand .
+
+* Ward E and Ward F are top 2 by number of superhosts and superhosts charge more.
+
+* Superhosts charge more but I suspect that the rankings of neighbourhoods has been affected by room type.
+
+* We can see that in some neighbourhoods superhosts aren't even charging as much as the regular ones (especially in the Ward E where properties are in demand and superhosts have high revenue potential.
+
+* Average price is even higher without instant book, according to Airbnb hosts get double the reservations because of the convenience factor.
+
+* hosts with instant book enabled seems to be more available, which means they get less reservations. Hosts are not charging premium for the convenience that comes with instant book.
+
+  ## Act
