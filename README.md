@@ -66,4 +66,84 @@ Note that some columns have same number of missing values. This may be due to mi
 SQL Query: [Data Analysis](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/2.%20Data%20Analysis.sql)  
 Data Visualization: [Tableau](https://public.tableau.com/app/profile/raksha.kandasamy.chandramohan/viz/JerseyCityAirbnb_16972383746030/Dashboard1#1)  
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.  
-The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
+
+The analysis question is: 1.) How/where are tourists/Airbnb guests spending their money in JerseyCity?
+2.) What makes a successful host in JerseyCity?
+3.) Strategy suggestions for Airbnb in JerseyCity? 
+
+* There are 579 unique Airbnb hosts in Jersey City.
+  ![Screenshot 2023-10-27 10 59 41 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/d741198c-61ad-438d-91de-30bb6e9da7bd)
+
+* There are 1,324 unique listings in Jersey City.
+  ![Screenshot 2023-10-27 10 59 55 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/f7788369-aba2-44a8-b2fd-902f04325ec8)
+
+* About (72%) of Airbnb hosts only have one listing, other hosts could have multiple listings (up to as many as 400)
+ ![Screenshot 2023-10-27 11 00 24 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/c69fe239-0b89-440c-bf3f-71e0075d9e89)
+
+* Number of listings and average price by neighbourhood : Some of the more rural/remote neighbourhoods have higher average prices, my guess is that the properties tend to be larger for these areas (room type/beds)
+![Screenshot 2023-10-27 11 00 44 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/0c0b717c-4345-42e5-8691-9f7a61ee148d)
+
+* Number of listing and average price by room type :
+![Screenshot 2023-10-27 11 01 12 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/b317eca7-10d1-41fd-bbc3-959d4b08c7b0)
+
+* Average price per bed by neighbourhood : This looks more like it, guests pay more $ for places downtown on average.
+![Screenshot 2023-10-27 11 01 32 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/dff976b8-bd3a-4359-965d-80a3b1fb74b0)
+
+* Neighbourhoods with the biggest revenue potential : Measure "potential" - with availability 30, I am making the assumption here that more than 30 days (before 2022-12-01) is too far away for people to book Airbnb for a trip.
+-- Limitaion - availability being 0 could also mean that the host simply blocked the calendar (I am seleting only the ones who has been reviewed in the past 12 months assuming the rest are inactive)
+![Screenshot 2023-10-27 11 01 47 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/25438ebd-c545-41b6-8a26-db2ed3186e90)
+
+* what about potential by neighbourhood and room type? AKA I would like to pivot the table, and turn the rows into room types, with the values being "potential"
+![Screenshot 2023-10-27 11 02 08 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/597771d0-c665-4f9c-9b79-00babf345713)
+The top two are entire homes in Ward E and Ward F by far
+ - Also, it looks like no one really wants shared room, regardless of location
+ - Entire homes as a room type is the most in demand .
+   
+* let's analyse the reviews and ratings
+- Use number_of_reviews as a metric for popularity
+- From Airbnb - A Superhost is someone who goes above and beyond in their hosting duties and is a shining example of how a Host should be. You can easily identify one from the badge that appears on their listing and profile.
+- I'd like to explore the "superhost" status a bit and see if it is associated with earning potential
+- As well as the elements associated with being a superhost (ratings)?, do they earn more (price)? Where are they in the city?
+
+* Number of superhosts/non-superhosts in JC
+![Screenshot 2023-10-27 11 02 37 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/7152b553-b305-4916-9253-e64b98dfa9b7)
+384 superhosts and 940 regular hosts
+
+* SuperHost and RegularHost By neighbourhood
+![Screenshot 2023-10-27 11 03 16 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/3ef6d140-4e0c-4210-ba8c-02b11397754b)
+Ward E and Ward F are top 2 by number of superhosts.
+
+* Looking into correlation between superhost status and price
+![Screenshot 2023-10-27 11 03 36 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/716c8128-dc9a-43d9-8de7-f203f7b00e35)
+155 vs 140, superhosts charge more.
+
+* what about neighbourhoods?
+![Screenshot 2023-10-27 11 03 55 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/26ac5e10-15c3-4a74-ba92-91e67d845bb7)
+In Ward E, regular hosts charge more than superhosts on average, something is not adding up
+- Again, superhosts charge more but I suspect that the rankings of neighbourhoods has been affected by room type
+- Pulling the same query, but price per bed this time
+![Screenshot 2023-10-27 11 04 28 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/dcab7b6e-e4ac-4417-b13d-acfcff07f3bd)
+We can see that in some neighbourhoods superhosts aren't even charging as much as the regular ones (especially in the Ward E where properties are in demand and superhosts have high revenue potential
+- Maybe Airbnb should notify the hosts about it to help them price their properties right for more revenue
+- There's also the possibility that the regular hosts aren't attracting as many guests as they could because they are pricing their properties too expensive
+- Either way, it has something to do with Airbnb helping their hosts with pricing
+
+* Next, let's look at ratings for superhosts vs regular hosts - what are superhosts doing right?
+![Screenshot 2023-10-27 11 04 28 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/9043101b-4ae8-433d-94b0-a32e24b281d6)
+20 records with col host_is_superhost blank, does affect our analysis so update it to regular host.
+
+* relationship between instant book and revenue potential
+![Screenshot 2023-10-27 11 04 59 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/f3d7d492-d9d8-467d-ad0d-08b122954942)
+ this does not match Airbnb's claim that enabling instant book increases a host's earnings
+
+* let's look at price and availability_30 separately.
+![Screenshot 2023-10-27 11 05 17 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/705fe582-3dcb-4e64-b338-130afb56b0b9)
+average price is even higher without instant book, according to Airbnb hosts get double the reservations because of the convenience factor.
+
+- is it true that with instant book enabled, hosts get more reservations?
+- again we will use the availibility for the next 30 days to measure it
+  ![Screenshot 2023-10-27 11 05 33 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/8d2881cf-14fe-41e8-a0a4-dbf97bfeb14a)
+hosts with instant book enabled seems to be more available, which means they get less reservations.
+- again, I see the missing opportunity - hosts are not charging premium for the convenience that comes with instant book
+- Airbnb should work on making their hosts better informed in terms of pricing, also incentivize hosts by optimizing search results etc
+![Screenshot 2023-10-27 11 05 43 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/936c4edd-9f8a-4eb2-bbe9-fcc323310ea6)
