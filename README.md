@@ -41,6 +41,7 @@ Reason:
 A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inability to manage large amounts of data. Because the Airbnb JerseyCity dataset has more than million rows, it is essential to use a platform like BigQuery that supports huge volumes of data.
 ### Data Exploration
 SQL Query: [1.Data Exploration](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/1.%20Data%20Exploration.sql) 
+
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.
 
 1. The table below shows the all column names and their data types. The __id__ column is our primary key.
@@ -71,6 +72,7 @@ Note that some columns have same number of missing values. This may be due to mi
 
 ## Analyze
 SQL Query: [Data Analysis](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/2.%20Data%20Analysis.sql)  
+
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau. 
 
 The analysis question is: 
@@ -110,7 +112,7 @@ The analysis question is:
 
 ![Screenshot 2023-10-27 11 01 47 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/25438ebd-c545-41b6-8a26-db2ed3186e90)
 
-* what about potential by neighbourhood and room type? AKA I would like to pivot the table, and turn the rows into room types, with the values being "potential"
+* what about potential by neighbourhood and room type?
 
 ![Screenshot 2023-10-27 11 02 08 AM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/597771d0-c665-4f9c-9b79-00babf345713)
 
@@ -153,9 +155,6 @@ In Ward E, regular hosts charge more than superhosts on average, something is no
 ![Screenshot 2023-10-27 12 31 29 PM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/831d5062-0f0a-4390-aeb2-6f6fa9ee7d73)
 
 We can see that in some neighbourhoods superhosts aren't even charging as much as the regular ones (especially in the Ward E where properties are in demand and superhosts have high revenue potential
-- Maybe Airbnb should notify the hosts about it to help them price their properties right for more revenue
-- There's also the possibility that the regular hosts aren't attracting as many guests as they could because they are pricing their properties too expensive
-- Either way, it has something to do with Airbnb helping their hosts with pricing
 
 * Next, let's look at ratings for superhosts vs regular hosts - what are superhosts doing right?
 
@@ -181,8 +180,6 @@ average price is even higher without instant book, according to Airbnb hosts get
 ![Screenshot 2023-10-27 12 37 04 PM](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/c7da7fee-7bf9-42b0-93ca-ba487376506c)
 
 hosts with instant book enabled seems to be more available, which means they get less reservations.
-- again, I see the missing opportunity - hosts are not charging premium for the convenience that comes with instant book
-- Airbnb should work on making their hosts better informed in terms of pricing, also incentivize hosts by optimizing search results etc
 
 ## Share
 
@@ -224,7 +221,7 @@ The top revenue contributors to Airbnb in Jersey City are entire homes from Ward
 
 - Help superhosts price their properties in a way that reflects their status;
 
--  Help instantbookable listings price properly taking into consideration the convenience they are providing;
+- Help instantbookable listings price properly taking into consideration the convenience they are providing;
 
 - Help highly rated listings price properly to reflect their high ratings and superior quality of services.
 
