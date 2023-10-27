@@ -221,7 +221,7 @@ The top revenue contributors to Airbnb in Jersey City are entire homes from Ward
 
 - Help superhosts price their properties in a way that reflects their status;
 
-- Help instantbookable listings price properly taking into consideration the convenience they are providing;
+-  Help instantbookable listings price properly taking into consideration the convenience they are providing;
 
 - Help highly rated listings price properly to reflect their high ratings and superior quality of services.
 
