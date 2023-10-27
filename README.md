@@ -1,17 +1,17 @@
 # Airbnb-JerseyCity-Case-Study
-Airbnb jerseycity case study! optimize the revenue by its active listings. 
+Airbnb JerseyCity case study! optimize the revenue by its active listings. 
 
 ## Introduction
-In this case study, I will estimate the revenue potential of Airbnb in jersey city and check if it can increase its revenue potential. In order to answer the key business questions, I will follow the steps of the data analysis process: __[Ask](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), [Share](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), and [Act](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/README.md#act)__.
+In this case study, I will estimate the revenue potential of Airbnb in jersey city and check if it can increase its revenue potential. In order to answer the key business questions, I will follow the steps of the data analysis process: __[Ask](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#analyze-and-share), [Share](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#analyze-and-share), and [Act](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#act)__.
 
 ### Quick links:
 Data Source: [Inside Airbnb](http://insideairbnb.com/get-the-data) [accessed on 10/05/23]  
 
 SQL Queries:  
 
-[1.Data Cleaning](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/3.Data%20Cleaning.sql)  
+[1.Data Exploration](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/1.%20Data%20Exploration.sql)  
 
-[2.Data Analysis](https://github.com/Raksha-17/Cyclistic-Case-Study/blob/main/4.Data%20Analysis.sql)  
+[2.Data Analysis](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/2.%20Data%20Analysis.sql)  
   
 Data Visualizations: [Tableau](https://public.tableau.com/app/profile/raksha.kandasamy.chandramohan/viz/JerseyCityAirbnb_16972383746030/Dashboard1#1)  
 
